@@ -1,5 +1,5 @@
 
-![](https://github.com/MarkTiedemann/naml/blob/master/logo.png)
+[![](https://github.com/MarkTiedemann/naml/blob/master/logo.png)](https://github.com/MarkTiedemann/naml)
 
 --------
 
