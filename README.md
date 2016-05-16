@@ -1,8 +1,7 @@
 
 <br>
 <center>
-    <span style='font-size: 105px; line-height: 60px; color: rgb(60,40,60)'> NAML </span>
-    <p style='font-size: 20px; color: rgb(80,50,80)'><b> Not Another Markup Language </b></p>
+    ![](https://github.com/MarkTiedemann/naml/blob/master/logo.png)
 </center>
 --------
 <br>
