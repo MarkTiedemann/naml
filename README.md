@@ -3,7 +3,8 @@
 
 --------
 
-[![](https://travis-ci.org/MarkTiedemann/naml.svg?branch=master)](https://travis-ci.org/MarkTiedemann/naml) [![](https://img.shields.io/node/v/naml.svg)](https://www.npmjs.com/package/naml)
+[![](https://travis-ci.org/MarkTiedemann/naml.svg?branch=master)](https://travis-ci.org/MarkTiedemann/naml)
+[![](https://david-dm.org/MarkTiedemann/naml.svg)](https://david-dm.org/MarkTiedemann/naml) [![](https://img.shields.io/node/v/naml.svg)](https://www.npmjs.com/package/naml)
 
 - **Simple, unified API.**
 - **Freely convert between:**
