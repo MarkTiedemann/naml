@@ -41,5 +41,16 @@
   "devDependencies": {
     "ava": "^0.14.0",
     "nyc": "^6.4.4"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkTiedemann/naml.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarkTiedemann/naml/issues"
+  },
+  "homepage": "https://github.com/MarkTiedemann/naml"
 }
