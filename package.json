@@ -7,6 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
+    "pretest": "npm link",
     "test": "nyc ava test/*/*.js --serial --timeout 5s --verbose"
   },
   "engines": {
