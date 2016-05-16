@@ -1,16 +1,13 @@
 
-![](https://github.com/MarkTiedemann/naml/blob/master/logo.png)]
+![](https://github.com/MarkTiedemann/naml/blob/master/logo.png)
 
 --------
 
 [![](https://travis-ci.org/MarkTiedemann/naml.svg?branch=master)](https://travis-ci.org/MarkTiedemann/naml) [![](https://img.shields.io/node/v/naml.svg)](https://www.npmjs.com/package/naml)
 
-<br>
-
 - **Simple, unified API.**
 - **Freely convert between:**
-<br>
-<br>
+<br><br>
   - **JSON** (JavaScript Object Notation): `.json`
   - **HJSON** (Human JSON): `.hjson`
   - **JSON5** (ES5 JSON): `.json5`
