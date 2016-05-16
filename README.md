@@ -1,8 +1,6 @@
-
 <br>
-<center>
-    ![](https://github.com/MarkTiedemann/naml/blob/master/logo.png)
-</center>
+![](https://github.com/MarkTiedemann/naml/blob/master/logo.png)
+<br>
 --------
 <br>
 [![](https://travis-ci.org/MarkTiedemann/naml.svg?branch=master)](https://travis-ci.org/MarkTiedemann/naml) ![](https://img.shields.io/node/v/naml.svg)
