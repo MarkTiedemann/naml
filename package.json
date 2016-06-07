@@ -40,7 +40,7 @@
     "tomlify-j0.4": "^1.0.1"
   },
   "devDependencies": {
-    "ava": "^0.14.0",
+    "ava": "^0.15.2",
     "nyc": "^6.4.4"
   },
   "directories": {
