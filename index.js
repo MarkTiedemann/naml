@@ -12,7 +12,7 @@ const INI = require('ini')
  * @param  {string} type input file extension
  * @return {string}      file extension without '.'
  */
- const removeFileExt = type =>
+const removeFileExt = type =>
     type.startsWith('.') ? type.substr(1) : type
 
 const parse = (string, type) => {
@@ -47,4 +47,4 @@ const stringify = (object, type) => {
     }
 }
 
-module.exports = { parse, stringify }
+module.exports = { parse, stringify, removeFileExt }
