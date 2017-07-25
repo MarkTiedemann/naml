@@ -13,16 +13,16 @@ const INI = require('ini')
  * @return {string}      file extension without '.'
  */
 const validType = (type) => {
-    if (type.charAt(0) == '.') {
+    if (type.charAt(0) === '.') {
         type = type.substr(1)
     }
     return type
 }
 
 const parse = (string, type) => {
-    type = validType(type)
     if (!string) throw new Error('missing string')
     if (!type) throw new Error('missing type')
+    type = validType(type)
     switch (type) {
         case 'json': return JSON.parse(string)
         case 'json5': return JSON5.parse(string)
@@ -36,9 +36,9 @@ const parse = (string, type) => {
 }
 
 const stringify = (object, type) => {
-    type = validType(type)
     if (!object) throw new Error('missing object')
     if (!type) throw new Error('missing type')
+    type = validType(type)
     switch (type) {
         case 'json': return JSON.stringify(object)
         case 'json5': return JSON5.stringify(object)
