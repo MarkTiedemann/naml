@@ -1,6 +1,6 @@
 {
   "name": "naml",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Not Another Markup Language",
   "bin": {
     "naml": "cli.js"
