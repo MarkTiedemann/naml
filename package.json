@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "npm link",
-    "test": "nyc ava test/*/*.js --serial --timeout 5s --verbose"
+    "test": "nyc ava test/*/*.js --serial --verbose"
   },
   "engines": {
     "node": ">=6.0.0"
