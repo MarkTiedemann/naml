@@ -38,7 +38,8 @@ const makeTest = (inExt, outExt) => {
 
 }
 
-const extensions = ['json', 'json5', 'hjson', 'cson', 'yaml', 'toml', 'ini']
+const types = ['json', 'json5', 'hjson', 'cson', 'yaml', 'toml', 'ini']
+const extensions = types.concat(types.map(type => '.' + type))
 
 for (let inExt of extensions) {
     for (let outExt of extensions) {
