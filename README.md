@@ -46,9 +46,14 @@ const NAML = require('naml')
 ### `NAML.stringify(object, type)`
 
 - **object** `{Object}`: the Object to be stringified
-- **type** `{String}`: the input type; one of the following: `json`, `hjson`, `json5`, `cson`, `yaml`, `toml`, `ini`
+- **type** `{String}`: the input type; one of the following (may include `.` before type): `json`, `hjson`, `json5`, `cson`, `yaml`, `toml`, `ini`
 - **returns** `{String}`: the resulting String
 - **throws** `{Error}`: if stringifying failed
+
+### `NAML.removeFileExt(type)`
+
+- **type** `{String}`: the input type; one of the following (may include `.` before type): `json`, `hjson`, `json5`, `cson`, `yaml`, `toml`, `ini`
+- **returns** `{String}`: the resulting String without `.`
 
 ## License
 

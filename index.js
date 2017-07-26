@@ -7,13 +7,22 @@ const YAML = require('js-yaml')
 const TOML = { parse: require('toml-j0.4').parse, stringify: require('tomlify-j0.4') }
 const INI = require('ini')
 
+/**
+ * Removes '.' in file extensions
+ * @param  {string} type input file extension
+ * @return {string}      file extension without '.'
+ */
+const removeFileExt = type =>
+    type.startsWith('.') ? type.substr(1) : type
+
 const parse = (string, type) => {
     if (!string) throw new Error('missing string')
     if (!type) throw new Error('missing type')
+    type = removeFileExt(type)
     switch (type) {
         case 'json': return JSON.parse(string)
         case 'json5': return JSON5.parse(string)
-        case 'hjson': return HJSON.parse(string)
+        case 'hjson': return HJSON.parse(string.toString())
         case 'cson': return CSON.parse(string)
         case 'yaml': return YAML.safeLoad(string)
         case 'toml': return TOML.parse(string)
@@ -25,6 +34,7 @@ const parse = (string, type) => {
 const stringify = (object, type) => {
     if (!object) throw new Error('missing object')
     if (!type) throw new Error('missing type')
+    type = removeFileExt(type)
     switch (type) {
         case 'json': return JSON.stringify(object)
         case 'json5': return JSON5.stringify(object)
@@ -37,4 +47,4 @@ const stringify = (object, type) => {
     }
 }
 
-module.exports = { parse, stringify }
+module.exports = { parse, stringify, removeFileExt }
