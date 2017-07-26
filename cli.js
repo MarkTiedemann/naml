@@ -38,7 +38,7 @@ fs.readFile(input, (err, data) => {
 
     try {
 
-        const parsed = NAML.parse(new String(data), inputFormat)
+        const parsed = NAML.parse(data.toString(), inputFormat)
         const stringified = NAML.stringify(parsed, outputFormat)
 
         fs.outputFile(output, stringified, err => {
