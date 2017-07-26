@@ -22,7 +22,7 @@ const parse = (string, type) => {
     switch (type) {
         case 'json': return JSON.parse(string)
         case 'json5': return JSON5.parse(string)
-        case 'hjson': return HJSON.parse(string.toString())
+        case 'hjson': return HJSON.parse(string)
         case 'cson': return CSON.parse(string)
         case 'yaml': return YAML.safeLoad(string)
         case 'toml': return TOML.parse(string)

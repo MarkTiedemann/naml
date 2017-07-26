@@ -26,7 +26,7 @@ const readFile = (name) => {
         const file = path.join(process.cwd(), name)
         fs.readFile(file, (err, data) => {
             if (err) reject(err)
-            else resolve(new String(data))
+            else resolve(data.toString())
         })
     })
 }
