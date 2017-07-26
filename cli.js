@@ -16,10 +16,10 @@ const logError = err => {
 }
 
 if (args.length < 1)
-    logError(new Error('missing arguments: [input-file] [output-file]'))
+    logError(new Error('Missing arguments: [input-file] [output-file]'))
 
 if (args.length < 2)
-    logError(new Error('missing argument: [output-file]'))
+    logError(new Error('Missing argument: [output-file]'))
 
 const input = args.shift()
 const output = args.shift()

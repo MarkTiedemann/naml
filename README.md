@@ -19,34 +19,34 @@
 
 ## Installation
 
-```
+```sh
 npm install naml
 ```
 
 ## CLI
 
-```
+```sh
 naml [input-file] [output-file]
 ```
 **Example:** `naml path/to/input.yaml path/to/output.json`
 
 ## API
 
-```
+```js
 const NAML = require('naml')
 ```
 
 ### `NAML.parse(string, type)`
 
 - **string** `{String}`: the String to be parsed
-- **type** `{String}`: the input type; one of the following: `json`, `hjson`, `json5`, `cson`, `yaml`, `toml`, `ini`
+- **type** `{String}`: the input type; one of the following: `json`, `hjson`, `json5`, `cson`, `yaml`, `toml`, `ini` (may be prefixed with a `.`)
 - **returns** `{Object}`: the resulting Object
 - **throws** `{Error}`: if parsing failed
 
 ### `NAML.stringify(object, type)`
 
 - **object** `{Object}`: the Object to be stringified
-- **type** `{String}`: the input type; one of the following (may include `.` before type): `json`, `hjson`, `json5`, `cson`, `yaml`, `toml`, `ini`
+- **type** `{String}`: the input type; one of the following: `json`, `hjson`, `json5`, `cson`, `yaml`, `toml`, `ini` (may be prefixed with a `.`)
 - **returns** `{String}`: the resulting String
 - **throws** `{Error}`: if stringifying failed
 
