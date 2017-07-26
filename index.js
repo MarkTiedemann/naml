@@ -20,7 +20,7 @@ const parse = (string = x`string`, type = x`type`) => {
         case 'yaml': return YAML.safeLoad(string)
         case 'toml': return TOML.parse(string)
         case 'ini': return INI.parse(string)
-        default: throw new Error('invalid type')
+        default: throw new Error('Invalid type')
     }
 }
 
@@ -33,7 +33,7 @@ const stringify = (object = x`object`, type = x`type`) => {
         case 'yaml': return YAML.safeDump(object)
         case 'toml': return TOML.stringify(object)
         case 'ini': return INI.stringify(object)
-        default: throw new Error('invalid type')
+        default: throw new Error('Invalid type')
     }
 }
 
