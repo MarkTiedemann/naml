@@ -50,11 +50,6 @@ const NAML = require('naml')
 - **returns** `{String}`: the resulting String
 - **throws** `{Error}`: if stringifying failed
 
-### `NAML.removeFileExt(type)`
-
-- **type** `{String}`: the input type; one of the following (may include `.` before type): `json`, `hjson`, `json5`, `cson`, `yaml`, `toml`, `ini`
-- **returns** `{String}`: the resulting String without `.`
-
 ## License
 
 [WTFPL](http://www.wtfpl.net/) – Do What the F*ck You Want to Public License.
