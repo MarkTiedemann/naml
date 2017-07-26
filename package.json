@@ -37,12 +37,12 @@
     "js-yaml": "^3.9.0",
     "json5": "^0.5.1",
     "toml-j0.4": "^1.1.0",
-    "tomlify-j0.4": "^2.2.0"
+    "tomlify-j0.4": "^2.2.0",
+    "throw-if-missing": "^1.1.0"
   },
   "devDependencies": {
     "ava": "^0.15.2",
-    "nyc": "^6.4.4",
-    "throw-if-missing": "^1.1.0"
+    "nyc": "^6.4.4"
   },
   "directories": {
     "test": "test"
