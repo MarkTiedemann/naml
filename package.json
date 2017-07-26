@@ -41,7 +41,8 @@
   },
   "devDependencies": {
     "ava": "^0.15.2",
-    "nyc": "^6.4.4"
+    "nyc": "^6.4.4",
+    "throw-if-missing": "^1.1.0"
   },
   "directories": {
     "test": "test"

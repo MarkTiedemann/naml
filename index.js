@@ -1,5 +1,6 @@
 'use strict'
 
+const x = require('throw-if-missing')
 const JSON5 = require('json5')
 const HJSON = require('hjson')
 const CSON = require('cson')
@@ -10,9 +11,7 @@ const INI = require('ini')
 const removeFileExt = type =>
     type.startsWith('.') ? type.substr(1) : type
 
-const parse = (string, type) => {
-    if (!string) throw new Error('missing string')
-    if (!type) throw new Error('missing type')
+const parse = (string = x`string`, type = x`type`) => {
     switch (removeFileExt(type)) {
         case 'json': return JSON.parse(string)
         case 'json5': return JSON5.parse(string)
@@ -25,9 +24,7 @@ const parse = (string, type) => {
     }
 }
 
-const stringify = (object, type) => {
-    if (!object) throw new Error('missing object')
-    if (!type) throw new Error('missing type')
+const stringify = (object = x`object`, type = x`type`) => {
     switch (removeFileExt(type)) {
         case 'json': return JSON.stringify(object)
         case 'json5': return JSON5.stringify(object)
